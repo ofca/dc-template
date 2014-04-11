@@ -1,0 +1,14 @@
+// Available breakpoints
+$bp1: "only screen and (max-width: 479px)";
+$bp2: "only screen and (min-width: 480px) and (max-width: 790px)";
+$bp3: "only screen and (min-width: 792px) and (max-width: 1023px)";
+$bp4: "only screen and (min-width: 1024px) and (max-width: 1279px)";
+$bp5: "only screen and (min-width: 1280px)";
+
+// Breakpoints containers widths
+$cbp1: 300px;
+$cbp2: 470px;
+$cbp3: 760px;
+$cbp4: 980px;
+$cbp5: 1200px;
+

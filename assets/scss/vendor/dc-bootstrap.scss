@@ -1,0 +1,87 @@
+@mixin mq($string) {
+    @media #{$string} {
+        @content;
+    }
+}
+
+/* Grid helpers
+---------------------------------------------------------------------------- */
+.container {
+  margin: auto;
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.container:after,
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+.col {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  float: left;
+}
+
+/* Simple helpers
+---------------------------------------------------------------------------- */
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+/* Makes image responsive
+---------------------------------------------------------------------------- */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Screen readers only
+---------------------------------------------------------------------------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Image replacement 
+---------------------------------------------------------------------------- */
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
