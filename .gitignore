@@ -4,3 +4,12 @@
 # node/npm files
 npm-debug.log
 node_modules
+
+# js/css dist files
+*.min.dist.js
+*.min.dist.css
+*.min.dist.map
+*.min.dist.css.map
+
+# sass cache
+/.sass-cache

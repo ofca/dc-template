@@ -1,3 +1,17 @@
+// Available breakpoints
+$bp1: "only screen and (max-width: 479px)" !default;
+$bp2: "only screen and (min-width: 480px) and (max-width: 790px)" !default;
+$bp3: "only screen and (min-width: 792px) and (max-width: 1023px)" !default;
+$bp4: "only screen and (min-width: 1024px) and (max-width: 1279px)" !default;
+$bp5: "only screen and (min-width: 1280px)" !default;
+
+// Breakpoints containers widths
+$cbp1: 300px !default;
+$cbp2: 470px !default;
+$cbp3: 760px !default;
+$cbp4: 980px !default;
+$cbp5: 1200px !default;
+
 @mixin mq($string) {
     @media #{$string} {
         @content;
@@ -25,6 +39,12 @@
 .clearfix:after {
   clear: both;
 }
+
+@include mq($bp1) { .container: $cbp1; }
+@include mq($bp2) { .container: $cbp2; }
+@include mq($bp3) { .container: $cbp3; }
+@include mq($bp4) { .container: $cbp4; }
+@include mq($bp5) { .container: $cbp5; }
 
 .col {
   box-sizing: border-box;
