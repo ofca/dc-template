@@ -185,11 +185,13 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
-            files: [
-                '<%= project.assets %>js/**/*.js',
-                '!<%= project.assets %>js/dist/*.js',
-                '!<%= project.assets %>js/vendor/*.js'
-            ],
+            files: {
+                src: [
+                    '<%= project.assets %>js/**/*.js',
+                    '!<%= project.assets %>js/dist/*.js',
+                    '!<%= project.assets %>js/vendor/*.js'
+                ]
+            },
             options: {
                 jshintrc: '.jshintrc'
             }
