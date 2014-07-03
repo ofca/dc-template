@@ -19,8 +19,7 @@ module.exports = function(grunt) {
             }
         },
         css: {
-            dev: {
-
+            dist: {
             }
         }
     };
@@ -127,7 +126,6 @@ module.exports = function(grunt) {
         sass: {
             dev: {
                 options: {
-                    style: 'compressed',
                     sourcemap: true,
                     banner: '<%= tag.banner %>'                  
                 },
@@ -137,7 +135,7 @@ module.exports = function(grunt) {
                     cwd: '<%= project.assets %>scss/',
                     src: ['*.scss'],
                     dest: '<%= project.assets %>css/',
-                    ext: '.min.dist.css'
+                    ext: '.css'
                 }]
             },
             dist: {
